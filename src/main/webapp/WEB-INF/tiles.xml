@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+<definition name="baselayout.jsp" template="/WEB-INF/mainpages/baselayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/mainpages/header.jsp "/>		
+		<put-attribute name="menu" value="/WEB-INF/mainpages/menu.jsp"/>
+						<put-attribute name="body" value=" "/>
+        <put-attribute name="footer" value="/WEB-INF/mainpages/footer.jsp "/>          
+
+</definition>
+
+
+<definition name="home" extends="baselayout.jsp">
+<put-attribute name="title" value="Home"/>
+<put-attribute name="body" value="/WEB-INF/pages/home.jsp"/>
+</definition>
+
+<definition name="about" extends="baselayout.jsp">
+<put-attribute name="title" value="About"/>
+<put-attribute name="body" value="/WEB-INF/pages/about.jsp"/>
+</definition>
+
+<definition name="updateproduct" extends="baselayout.jsp">
+<put-attribute name="title" value="Update"/>
+<put-attribute name="body" value="/WEB-INF/pages/update.jsp"/>
+</definition>
+
+
+</tiles-definitions>
+
+<!-- <tiles-definitions>
+	<definition name="home" template="/WEB-INF/pages/home.jsp"/> 
+	<definition name="about" template="/WEB-INF/pages/about.jsp"/> 
+	<definition name="update" template="/WEB-INF/pages/about.jsp"/> 
+	<definition name="base.layout"
+		template="/WEB-INF/mainpage/baselayout.jsp">
+		
+		<put-attribute name="title" value="" />
+		
+		<put-attribute name="header"
+			value="/WEB-INF/mainpage/header.jsp" />
+		
+		<put-attribute name="menu"
+			value="/WEB-INF/mainpage/menu.jsp" />
+		
+		<put-attribute name="body" value="" />
+		
+		<put-attribute name="footer"
+			value="/WEB-INF/mainpage/footer.jsp" />
+	</definition>
+	
+</tiles-definitions> -->
